@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Daisy UI CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>DevBoard</title>
+  </head>
+  <body class="bg-gray-400">
+    <!-- container section Start-->
+    <section class="container w-11/12 pt-3 pb-3 mx-auto">
+      <!-- Header section Start-->
+      <header>
+        <nav>
+          <div class="navbar bg-base-100 shadow-sm rounded-md">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl font-normal"
+                ><img src="/assets/logo.png" alt="logo" />Dev<span
+                  class="font-bold"
+                  >Board</span
+                ></a
+              >
+            </div>
+            <div class="flex gap-3 mx-3 items-center">
+              <div class="flex gap-2 bg-slate-300 px-4 py-2 rounded-md">
+                <img src="assets/checkbox.png" alt="Checkbox" />
+                <p id="taskDone">20</p>
+              </div>
+
+              <!-- Color Switch Button -->
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost btn-circle avatar"
+              >
+                <div class="w-10 rounded-full" id="btn-color">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="assets/theme-btn.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Header section End-->
+
+      <main class="flex mt-5 gap-5">
+        <!-- Form Section Start -->
+        <section class="w-3/4 bg-white rounded-md">
+          <!-- Form topbar Section Start -->
+          <div class="top-bar flex">
+            <!-- Card 1 -->
+            <div
+              class="w-3/12 bg-[#F4F7FF] p-8 m-6 rounded-md flex items-center justify-center gap-4"
+            >
+              <img src="assets/checkbox.png" alt="checkbox" />
+              <div>
+                <p>Task Assigned</p>
+                <h3 id="task" class="font-bold text-2xl">06</h3>
+              </div>
+            </div>
+            <!---------------------->
+            <!-- Card 2 -->
+            <div
+              class="w-6/12 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] my-6 rounded-md flex items-center justify-center px-12"
+            >
+              <img src="assets/board.png" alt="board" />
+              <h2 class="text-2xl text-white font-bold px-8 py-4">
+                Discover Something New Today!
+              </h2>
+            </div>
+            <!---------------------->
+            <!-- Card 3 -->
+            <div
+              class="w-3/12 bg-[#F4F7FF] p-8 m-6 rounded-md flex items-center justify-center gap-4"
+            >
+              <img src="assets/calender.png" alt="calender" />
+              <div>
+                <p class="font-bold text-xl" id="date">Wed , Jul 28 2025</p>
+              </div>
+            </div>
+          </div>
+          <!-- Form topbar Section End -->
+          <hr style="border-top: 1px dashed #3752fd" />
+
+          <section class="m-3">
+            <div class="card-section flex gap-8 mb-8">
+              <!-- card-1 -->
+              <div class="card card-dash bg-[#F4F7FF] w-96">
+                <div class="card-body">
+                  <h3 class="px-2 py-3 bg-white w-fit rounded-md">ShopEase</h3>
+                  <h2 id="taskName-1" class="card-title">
+                    Fix Mobile Button Issue
+                  </h2>
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <hr class="my-3" style="border-top: 1px dashed #3752fd" />
+
+                  <div class="card-actions justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <p>21 March 2025</p>
+                    </div>
+                    <button id="complete-1" class="btn btn-primary">
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card-2 -->
+              <div class="card card-dash bg-[#F4F7FF] w-96">
+                <div class="card-body">
+                  <h3 class="px-2 py-3 bg-white w-fit rounded-md">CloudSync</h3>
+                  <h2 id="taskName-2" class="card-title">Add Dark Mode</h2>
+                  <p>
+                    Store the user's preference in localStorage, update CSS
+                    variables dynamically, and apply a smooth transition effect.
+                  </p>
+                  <hr class="my-3" style="border-top: 1px dashed #3752fd" />
+
+                  <div class="card-actions justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <p>21 March 2025</p>
+                    </div>
+                    <button id="complete-2" class="btn btn-primary">
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card-3 -->
+              <div class="card card-dash bg-[#F4F7FF] w-96">
+                <div class="card-body">
+                  <h3 class="px-2 py-3 bg-white w-fit rounded-md">SwiftPay</h3>
+                  <h2 id="taskName-3" class="card-title">
+                    Optimize Home page 
+                  </h2>
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <hr class="my-3" style="border-top: 1px dashed #3752fd" />
+
+                  <div class="card-actions justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <p>21 March 2025</p>
+                    </div>
+                    <button id="complete-3" class="btn btn-primary">
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd Row -->
+            <div class="card-section flex gap-8 mb-8">
+              <!-- card-1 -->
+              <div class="card card-dash bg-[#F4F7FF] w-96">
+                <div class="card-body">
+                  <h3 class="px-2 py-3 bg-white w-fit rounded-md">Meta</h3>
+                  <h2 id="taskName-4" class="card-title">Add new emoji 🤲</h2>
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <hr class="my-3" style="border-top: 1px dashed #3752fd" />
+
+                  <div class="card-actions justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <p>21 March 2025</p>
+                    </div>
+                    <button id="complete-4" class="btn btn-primary">
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card-2 -->
+              <div class="card card-dash bg-[#F4F7FF] w-96">
+                <div class="card-body">
+                  <h3 class="px-2 py-3 bg-white w-fit rounded-md">
+                    Google LLC
+                  </h3>
+                  <h2 id="taskName-5" class="card-title">
+                    Integrate OpenAI API
+                  </h2>
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <hr class="my-3" style="border-top: 1px dashed #3752fd" />
+
+                  <div class="card-actions justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <p>21 March 2025</p>
+                    </div>
+                    <button id="complete-5" class="btn btn-primary">
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card-3 -->
+              <div class="card card-dash bg-[#F4F7FF] w-96">
+                <div class="card-body">
+                  <h3 class="px-2 py-3 bg-white w-fit rounded-md">Glassdoar</h3>
+                  <h2 id="taskName-6" class="card-title">
+                    Improve Job searching
+                  </h2>
+                  <p>
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <hr class="my-3" style="border-top: 1px dashed #3752fd" />
+
+                  <div class="card-actions justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <p>21 March 2025</p>
+                    </div>
+                    <button id="complete-6" class="btn btn-primary">
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Activity Log Section Start -->
+        <section class="w-1/4 bg-white rounded-md">
+          <div>
+            <div class="flex items-center justify-center mt-5 gap-3">
+              <img src="assets/activity.png" alt="assets" />
+              <h2 class="card-title">Activity Log</h2>
+            </div>
+
+            <button
+              id="clearLog"
+              class="p-3 bg-[#3752FD] text-white text-xl rounded-md my-4 mx-28"
+            >
+              Clear History
+            </button>
+          </div>
+          <hr style="border-top: 1px dashed #3752fd" />
+
+          <div class="p-3">
+            <p id="log"></p>
+          </div>
+        </section>
+        <!-- Activity Log Section End -->
+      </main>
+    </section>
+    <!-- container section end-->
+
+    <script src="scripts/RandomBg.js"></script>
+    <script src="scripts/calender.js"></script>
+    <script src="scripts/complete.js"></script>
+    <script src="scripts/clearLog.js"></script>
+    <script src="scripts/congrats.js"></script>
+  </body>
+</html>
