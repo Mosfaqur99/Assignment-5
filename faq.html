@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Daisy UI CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>DevBoard</title>
+  </head>
+  <body class="bg-gray-400">
+    <!-- container section Start-->
+    <section class="container w-11/12 pt-3 pb-3 mx-auto">
+      <!-- Header section Start-->
+      <header>
+        <nav>
+          <div class="navbar bg-base-100 shadow-sm rounded-md">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl font-normal"
+                ><img src="assets/logo.png" alt="logo" />Dev<span
+                  class="font-bold"
+                  >Board</span
+                ></a
+              >
+            </div>
+            <div class="flex gap-3 mx-3 items-center">
+              <button
+                class="btn btn-primary"
+                onclick="location.href='index.html'"
+              >
+                Back To Desk
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <!-- Header section End-->
+
+    <main>
+      <section class="container w-11/12 pt-3 pb-3 mx-auto">
+        <!-- Question 1 -->
+        <div class="bg-white mb-3 rounded-md p-5">
+          <h3 class="mb-3">
+            <span class="font-bold">Question-1:</span> What are the different
+            ways to select an element in the DOM?
+          </h3>
+          <p>
+            <span class="font-bold">Answer:</span>There is couple of way how we
+            can select an element in the DOM. Those are <br />
+            1. getElementById <br />2. getElementsByClassName <br />
+            3. getElementsByTagName <br />
+            4. querySelector <br />
+            5. querySelectorAll
+          </p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="bg-white rounded-md mb-3 p-5">
+          <h3 class="mb-3">
+            <span class="font-bold">Question-2:</span> What is the difference
+            between innerHTML, innerText, and textContent ?
+          </h3>
+          <p>
+            <span class="font-bold">Answer:</span> In JavaScript innerHTML,
+            innerText and textContent all of these used for manipulating html
+            elements. So from there key differences written below:
+            <br />
+            <span style="text-decoration: underline">innerHTML:</span>
+            Includes all HTML tags within the element, Useful for manipulating
+            the full HTML structure of an element, Can be used to inject new
+            HTML content into an element.
+
+            <br />
+            <span style="text-decoration: underline">innerText:</span>
+
+            Only returns the visible text content of an element, Ignores hidden
+            elements and CSS styling, Best used when we only need the text that
+            a user would see on the page.
+
+            <br />
+            <span style="text-decoration: underline"> textContent:</span>
+
+            Retrieves all text content within an element, including hidden text.
+            Preserves whitespace and line breaks. Useful for extracting all text
+            content from a page, even if it's not visually displayed.
+          </p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="bg-white mb-3 rounded-md p-5">
+          <h3 class="mb-3">
+            <span class="font-bold">Question-3:</span> What is event delegation
+            in the DOM?
+          </h3>
+          <p>
+            <span class="font-bold">Answer:</span> Event delegation is a design
+            pattern in JavaScript used to efficiently manage and handle events
+            on multiple child elements by attaching a single event listener to a
+            common ancestor element.
+          </p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="bg-white mb-3 rounded-md p-5">
+          <h3 class="mb-3">
+            <span class="font-bold">Question-4:</span> What is event bubbling in
+            the DOM?
+          </h3>
+          <p>
+            <span class="font-bold">Answer:</span> Bubbling in the DOM is an
+            event propagation method. It starts with an event triggering on the
+            innermost element and then proceeds to trigger the same event on its
+            parent element and then its parent's parent element and so on.
+          </p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="bg-white mb-3 rounded-md p-5">
+          <h3 class="mb-3">
+            <span class="font-bold">Question-5:</span> How do you create, add,
+            and remove elements using JavaScript?
+          </h3>
+          <p>
+            <span class="font-bold">Answer:</span> In JavaScript, we can create,
+            add, and remove elements using the DOM. <br />
+            <br />To create an element. <br />
+            Use document.createElement(tagName) <br />
+
+            <br />
+            <br />
+            Adding an Element Once created, we can add the element to the DOM
+            using: <br />
+
+            appendChild() → Adds as the last child <br />
+            append() → Can add text nodes along with elements <br />
+            prepend() → Adds as the first child <br />
+            insertBefore() → Adds before a reference node <br />
+            replaceChild() → Replaces an existing child <br />
+
+            <br />
+            <br />
+
+            We can remove an element using: <br />
+
+            removeChild() → Removes a specific child from the parent <br />
+            remove() → Directly removes an element <br />
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
